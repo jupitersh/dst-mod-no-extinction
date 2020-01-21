@@ -1,5 +1,7 @@
 # No Extinction
 
+![](https://steamuserimages-a.akamaihd.net/ugc/785250230723691302/007F774520CA0DDDF9C76D961BCEFF3E27AB5D85/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true)
+
 ## Overview
 
 This is a mod for the game of Don't Starve Together which is available in the Steam Workshop. 
