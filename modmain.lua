@@ -1,3 +1,7 @@
+if not GLOBAL.TheNet:GetIsServer() then 
+    return
+end
+
 local Vector3 = GLOBAL.Vector3
 local SpawnPrefab = GLOBAL.SpawnPrefab
 local GROUND = GLOBAL.GROUND

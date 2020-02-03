@@ -26,6 +26,10 @@ Checking the current number of Beefalo, Volt Goat, Spider Den and Hollow Stump u
 
 ## Changelog
 
+**Version 1.0.1**
+
+- Fixed a bug that client respawned these prefabs.
+
 ## License
 
 Released under the [GNU GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html)
