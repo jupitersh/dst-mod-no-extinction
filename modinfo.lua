@@ -1,9 +1,9 @@
 name = "No Extinction"
 description = [[
-Prevent Beefalo, Volt Goat, Spider Den and Hollow Stump from extinction.
+Prevent Beefalo, Volt Goat, Spider Den, Hollow Stump and Bee Hive from extinction.
 ]]
 author = "辣椒小皇纸"
-version = "1.0.1"
+version = "1.1.0"
 
 forumthread = ""
 
@@ -46,3 +46,4 @@ AddCount("leastnum_beefalo", "Least Num of Beefalo", 2)
 AddCount("leastnum_lightninggoat", "Least Num of Lightning Goat", 2)
 AddCount("leastnum_spiderden", "Least Num of Spider Den", 2)
 AddCount("leastnum_catcoonden", "Least Num of Catcoon Den", 2)
+AddCount("leastnum_beehive", "Least Num of Bee Hive", 2)
