@@ -6,7 +6,7 @@
 
 This is a mod for the game of Don't Starve Together which is available in the Steam Workshop. 
 
-Prevent Beefalo, Volt Goat, Spider Den, Hollow Stump and Bee Hive from extinction.
+Prevent Beefalo, Volt Goat, Spider Den, Hollow Stump, Knight and Bee Hive from extinction.
 
 Checking the current number of Beefalo, Volt Goat, Spider Den, Hollow Stump and Bee Hive upon the death of them, if the current number is less than the least num that was set, it will spawn them randomly, so that prevents the extinction of them. 
 
@@ -26,6 +26,10 @@ Checking the current number of Beefalo, Volt Goat, Spider Den, Hollow Stump and 
 ```
 
 ## Changelog
+
+**Version 1.2.0**
+
+- Add Knight.
 
 **Version 1.1.0**
 

@@ -11,6 +11,7 @@ local leastnum_lightninggoat = GetModConfigData("leastnum_lightninggoat")
 local leastnum_spiderden = GetModConfigData("leastnum_spiderden")
 local leastnum_catcoonden = GetModConfigData("leastnum_catcoonden")
 local leastnum_beehive = GetModConfigData("leastnum_beehive")
+local leastnum_knight = GetModConfigData("leastnum_knight")
 
 local function TrySpawn(strfab)
     local pt = Vector3(math.random(-1000, 1000), 0, math.random(-1000, 1000))
@@ -72,9 +73,19 @@ local function BeehiveSpawnner(inst)
 	end)
 end
 
+local function KnightSpawnner(inst)
+	inst:ListenForEvent("onremove", function(inst)
+		local current_num = GLOBAL.c_countprefabs("knihgt", true)
+		if current_num < leastnum_knight then
+			TrySpawn("knight")
+		end
+	end)
+end
+
 
 AddPrefabPostInit("beefalo", BeefaloSpawnner)
 AddPrefabPostInit("lightninggoat", LightninggoatSpawnner)
 AddPrefabPostInit("spiderden", SpiderdenSpawnner)
 AddPrefabPostInit("catcoonden", CatcoondenSpawnner)
 AddPrefabPostInit("beehive", BeehiveSpawnner)
+AddPrefabPostInit("knight", KnightSpawnner)

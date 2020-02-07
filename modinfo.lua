@@ -1,9 +1,9 @@
 name = "No Extinction"
 description = [[
-Prevent Beefalo, Volt Goat, Spider Den, Hollow Stump and Bee Hive from extinction.
+Prevent Beefalo, Volt Goat, Spider Den, Hollow Stump, Knight and Bee Hive from extinction.
 ]]
 author = "辣椒小皇纸"
-version = "1.1.0"
+version = "1.2.0"
 
 forumthread = ""
 
@@ -24,7 +24,7 @@ server_filter_tags = {"No Extinction"}
 
 local countoption = {}
 
-for i=1,10 do
+for i=0,10 do
 	countoption[#countoption + 1] = {
 		description = i,
 		data = i,
@@ -47,3 +47,4 @@ AddCount("leastnum_lightninggoat", "Least Num of Lightning Goat", 2)
 AddCount("leastnum_spiderden", "Least Num of Spider Den", 2)
 AddCount("leastnum_catcoonden", "Least Num of Catcoon Den", 2)
 AddCount("leastnum_beehive", "Least Num of Bee Hive", 2)
+AddCount("leastnum_knight", "Least Num of Knight", 2)
