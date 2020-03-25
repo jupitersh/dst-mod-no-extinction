@@ -3,7 +3,7 @@ description = [[
 Prevent Beefalo, Volt Goat, Spider Den, Hollow Stump, Knight and Bee Hive from extinction.
 ]]
 author = "辣椒小皇纸"
-version = "1.2.0"
+version = "1.3.0"
 
 forumthread = ""
 
@@ -31,7 +31,38 @@ for i=0,10 do
 	}
 end
 
-configuration_options = {}
+configuration_options = {
+    {
+		name = "respawnmechanism",
+		label = "Respawn Mechanism再生机制",
+        hover = "Choose repawn near the death spot or randomly\n选择动物在死亡地点附近再生还是全图随机地点",
+        options =   {
+                        {description = "Near附近", data = "scripts/respawnnear.lua", hover = ""},
+                        {description = "Randomly随机", data = "scripts/respawnrandom.lua", hover = ""},
+                    },
+        default = "scripts/respawnnear.lua",
+    },
+    {
+		name = "respawntime",
+		label = "Respawn Time再生时间",
+        hover = "This option only works when you choose respawn near the death spot.\n改选项只在选择附近再生后生效，因为随机再生是马上再生的",
+        options =   {
+                        {description = "1 day", data = 1 , hover = ""},
+                        {description = "2 days", data = 2 , hover = ""},
+                        {description = "3 days", data = 3 , hover = ""},
+                        {description = "4 days", data = 4 , hover = ""},
+                        {description = "5 days", data = 5 , hover = ""},
+                        {description = "6 days", data = 6 , hover = ""},
+                        {description = "7 days", data = 7 , hover = ""},
+                        {description = "8 days", data = 8 , hover = ""},
+                        {description = "9 days", data = 9 , hover = ""},
+                        {description = "10 days", data = 10 , hover = ""},
+                        {description = "15 days", data = 15 , hover = ""},
+                        {description = "20 days", data = 20 , hover = ""},
+                    },
+        default = 5,
+    },
+}
 
 local function AddCount(name, label, df)
 	configuration_options[#configuration_options + 1] = {
