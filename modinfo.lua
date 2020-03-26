@@ -3,7 +3,7 @@ description = [[
 Prevent Beefalo, Volt Goat, Spider Den, Hollow Stump, Knight and Bee Hive from extinction.
 ]]
 author = "辣椒小皇纸"
-version = "1.3.0"
+version = "1.3.1"
 
 forumthread = ""
 

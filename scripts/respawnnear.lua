@@ -7,7 +7,7 @@ print("Mod Load: respawnnear.lua")
 local Vector3 = GLOBAL.Vector3
 local SpawnPrefab = GLOBAL.SpawnPrefab
 
-local repsawn_time = GetModConfigData("respawnday")
+local repsawn_time = GetModConfigData("respawntime") * 480
 
 local respawn_list = {
     "beefalo",
