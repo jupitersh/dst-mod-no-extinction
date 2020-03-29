@@ -38,6 +38,10 @@ end
 local function OnRecieveDeathEvent(inst)
     inst:AddComponent("timer")
 
+    if inst.spawnlist == nil then
+        inst.spawnlist = {}
+    end
+
     for k,v in pairs(respawn_list) do
         inst:ListenForEvent(v.."_death", function(inst,data)
             table.insert(inst.spawnlist, data)
@@ -47,7 +51,7 @@ local function OnRecieveDeathEvent(inst)
                 i = i + 1
             end
             inst.components.timer:StartTimer(v.."_"..i, repsawn_time)
-            --print("StartTimer", v.."_"..i)
+            print("StartTimer", v.."_"..i)
         end, GLOBAL.TheWorld)
     end
 
@@ -76,7 +80,7 @@ local function OnRecieveDeathEvent(inst)
         if old_onsave then
             old_onsave(inst2, data2)
         end
-        data2.spawnlist = GLOBAL.next(inst2.spawnlist) ~= nil and inst.spawnlist or nil
+        data2.spawnlist = inst.spawnlist
     end
 
     inst.OnLoad = function(inst2, data2)
