@@ -19,13 +19,20 @@ Checking the current number of Beefalo, Volt Goat, Spider Den, Hollow Stump and 
       leastnum_catcoonden=2,
       leastnum_lightninggoat=2,
       leastnum_spiderden=2,
-      leastnum_beehive=2
+      leastnum_beehive=2,
+      leastnum_knight=2,
+      leastnum_rocky=2,
+      leastnum_slurtlehole=2,
     },
     enabled=true 
   },
 ```
 
 ## Changelog
+
+**Version 1.4.0**
+
+- Add Rock Lobster and Slurtle Mound.
 
 **Version 1.3.0**
 

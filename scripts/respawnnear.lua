@@ -15,6 +15,8 @@ local respawn_list = {
     "spiderden",
     "catcoonden",
     "knight",
+    "rocky",
+    "slurtlehole",
 }
 
 local leastnum = {}
